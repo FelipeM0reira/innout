@@ -24,4 +24,10 @@ class Model {
   public function __set($key, $value) {
     $this->values[$key] = $value;
   }
+
+  public static function getSelect($columns = '*') {
+    $sql = "SELECT ${columns} FROM "
+      . static::$tableName;
+    return $sql;
+  }
 }
