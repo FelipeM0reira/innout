@@ -1,20 +1,11 @@
 <?php
 
 require_once(dirname(__FILE__, 2) . '/src/config/config.php');
-require_once(CONTROLLER_PATH . '/login.php');
 
-// loadView('login', ['texto' => 'abc123']);
+$uri = urldecode($_SERVER['REQUEST_URI']);
 
-// require_once(MODEL_PATH . '/Login.php');
+if($uri === '/' || $uri === '' || $uri === '/index.php') {
+  $uri = '/login.php';
+}
 
-// $login = new Login([
-//   'email' => 'quico@cod3r.com.br',
-//   'password' => 'a'
-// ]);
-
-// try {
-//   $login->checkLogin();
-//   echo 'Deu certo :)';
-// } catch (Exception $e) {
-//   echo 'Problema no login :P';
-// }
+require_once(CONTROLLER_PATH . "/{$uri}");
