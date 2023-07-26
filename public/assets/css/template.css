@@ -93,12 +93,18 @@ header.header .dropdown-content a {
   font-size: 1.1rem;
 }
 
+header.header .dropdown-content a:hover {
+  background-color: rgba(0, 0, 0, .1);
+}
+
 header.header .dropdown:hover {
   background-color: rgba(0, 0, 0, .05);
 }
 
-header.header .dropdown-content a:hover {
-  background-color: rgba(0, 0, 0, .1);
+header.header .avatar {
+  height: 55px;
+  border-radius: 50%;
+  margin-left: 10px;
 }
 
 aside.sidebar {
