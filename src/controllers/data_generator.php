@@ -1,4 +1,5 @@
 <?php
+loadModel('WorkingHours');
 function getDayTemplateByOdds($regularRate, $extraRate, $lazyRate) {
   $regularDayTemplate = [
     'time1' => '08:00:00',
