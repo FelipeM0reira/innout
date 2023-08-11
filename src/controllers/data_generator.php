@@ -1,5 +1,7 @@
 <?php
 loadModel('WorkingHours');
+
+Database::executeSQL('DELETE FROM working_hours');
 function getDayTemplateByOdds($regularRate, $extraRate, $lazyRate) {
   $regularDayTemplate = [
     'time1' => '08:00:00',
