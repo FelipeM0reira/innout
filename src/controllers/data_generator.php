@@ -2,7 +2,7 @@
 loadModel('WorkingHours');
 
 Database::executeSQL('DELETE FROM working_hours');
-Database::executeSQL('DELETE FROM users WHERE id > ');
+Database::executeSQL('DELETE FROM users WHERE id > x');
 
 function getDayTemplateByOdds($regularRate, $extraRate, $lazyRate) {
   $regularDayTemplate = [
