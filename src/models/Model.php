@@ -68,13 +68,14 @@ class Model {
     if(count($filters) > 0) {
       $sql .= " WHERE 1 = 1";
       foreach($filters as $column => $value) {
-        $sql .= " AND ${column} = " . static::getFormatedValue($value);
+        if($column == 'raw') {
+            $sql .= " AND {$value}";
+        } else {
+            $sql .= " AND ${column} = " . static::getFormatedValue($value);
+          }
       }
-      $sql[strlen($sql) - 1] = ')';
-      $id = Database::executeSQL($sql);
-      $this->id = $id;
-    }
-    return $sql;
+    } 
+  return $sql;
   }
 
   private static function getFormatedValue($value) {
