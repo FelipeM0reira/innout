@@ -78,12 +78,12 @@ class WorkingHours extends Model {
     $workday = DateInterval::createFromDateString('8 hours');
 
     if(!$t1) {
-      return (new DateTimeImmutable())->add($workday);
+        return (new DateTimeImmutable())->add($workday);
     } elseif($t4) {
-      return $t4;
+        return $t4;
     } else {
-      $total = sumIntervals($workday, $this->getLunchInterval());
-      return $t1->add($total);
+        $total = sumIntervals($workday, $this->getLunchInterval());
+        return $t1->add($total);
     }
   }
 
