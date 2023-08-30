@@ -40,7 +40,7 @@ class WorkingHours extends Model {
     if($nextTime === 'time1' || $nextTime === 'time3') {
         return 'exitTime';
     } elseif($nextTime === 'time2' || $nextTime === 'time4') {
-        return 'workInterval';
+        return 'workedInterval';
     } else {
         return null;
     }
