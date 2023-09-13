@@ -30,6 +30,36 @@ class User extends Model {
       $errors['name'] = 'Nome é um campo obrigatório.'; 
     }
 
+    if(!$this->email) {
+      $errors['email'] = 'E-mail é um campo obrigatório.'; 
+    } elseif(!filter_var($this->email, FILTER_VALIDATE_EMAIL)) {
+      $errors['email'] = 'Email inválido.';
+    }
+
+    if(!$this->start_date) {
+      $errors['start_date'] = 'Data de Admissão é um campo obrigatório.';
+    } elseif(!DateTime::createFromFormat('Y-m-d', $this->start_date)) {
+      $errors['start_date'] = 'Data de Admissão deve seguir o padrão dd/mm/aaaa.';
+    }
+
+    if($this->end_date && !DateTime::createFromFormat('Y-m-d', $this->end_date)) {
+      $errors['end_date'] = 'Data de Desligamento deve seguir o padrão dd/mm/aaaa.';
+    }
+
+    if(!$this->password) {
+      $errors['password'] = 'Senha é um campo obrigatório.'; 
+    }
+
+    if(!$this->confirm_password) {
+      $errors['confirm_password'] = 'Confirmação de Senha é um campo obrigatório.'; 
+    }
+
+    if($this->password && $this->confirm_password
+      && $this->password !== $this->confirm_password) {
+        $errors['password'] = 'As senhas não são iguais';
+        $errors['confirm_password'] = 'As senhas não são iguais';
+    }
+
     if(count($errors) > 0) {
       throw new ValidationException($errors);      
     }
