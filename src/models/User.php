@@ -22,4 +22,16 @@ class User extends Model {
     $this->password = password_hash($this->password, PASSWORD_DEFAULT);
     return parent::insert();
   }
+
+  private function validate() {
+    $errors = [];
+
+    if(!$this->name) {
+      $errors['name'] = 'Nome é um campo obrigatório.'; 
+    }
+
+    if(count($errors) > 0) {
+      throw new ValidationException($errors);      
+    }
+  }
 }
