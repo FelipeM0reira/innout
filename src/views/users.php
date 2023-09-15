@@ -30,12 +30,36 @@
           <a href="save_user.php?update=<?= $user->id ?>" class="btn btn-warning rounded-circle mr-2">
             <i class="icofont-edit"></i>
           </a>
-          <a href="?delete=<?= $user->id ?>" class="btn btn-danger rounded-circle">
+          <button class="btn btn-danger rounded-circle delete_btn" data-id="<?= $user->id ?>">
             <i class="icofont-trash"></i>
-          </a>
+          </button>
         </td>
       </tr>
       <?php endforeach ?>
     </tbody>
   </table>
 </main>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+$(".delete_btn").click(function() {
+  var id = $(this).data('id');
+  if (confirm('Tem certeza de que deseja excluir este registro ?')) {
+    $.ajax({
+      url: '?delete=' + id,
+      type: 'GET',
+      data: {
+        id: id
+      },
+      error: function() {
+        alert('Não foi possível deletar o registro.');
+      },
+      success: function(data) {
+        $(this).closest('tr').remove();
+        alert("Registro deletado com sucesso");
+      }.bind(this)
+    });
+  }
+});
+</script>
