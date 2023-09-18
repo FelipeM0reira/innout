@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/icofont.min.css">
   <link rel="stylesheet" href="assets/css/login.css">
-  <title>In N' Out</title>
+  <title></title>
 </head>
 
 <body>
@@ -24,25 +24,16 @@
       <div class="card-body">
         <?php include(TEMPLATE_PATH . '/messages.php') ?>
         <div class="form-group">
-          <label for="email">E-mail</label>
+          <label for="email">E-mail da conta</label>
           <input type="email" id="email" name="email" class="form-control <?= $errors['email'] ? 'is-invalid' : '' ?>"
             value="<?= $email ?>" placeholder="Informe o e-mail" autofocus>
           <div class="invalid-feedback">
             <?= $errors['email'] ?>
           </div>
         </div>
-        <div class="form-group">
-          <label for="password">Senha</label>
-          <input type="password" id="password" name="password"
-            class="form-control <?= $errors['password'] ? 'is-invalid' : '' ?>" placeholder="Informe a senha" autofocus>
-          <div class="invalid-feedback">
-            <?= $errors['password'] ?>
-          </div>
-        </div>
       </div>
       <div class="card-footer">
-        <a href="/recover_password.php" class="btn btn-secondary btn-lg mr-2">Esqueci a senha</a>
-        <button class="btn btn-lg btn-primary">Entrar</button>
+        <button class="btn btn-lg btn-primary">Enviar</button>
       </div>
     </div>
   </form>

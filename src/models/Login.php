@@ -17,6 +17,18 @@ class Login extends Model {
     }
   }
 
+  public function validateEmail() {
+    $errors = [];
+    
+    if(!$this->email) {
+      $errors['email'] = 'E-mail é um campo obrigatório.';
+    }
+
+    if(count($errors) > 0) {
+      throw new ValidationException($errors);
+    }
+  }
+
   public function checkLogin() {
     $this->validate();
     $user = User::getOne(['email' => $this->email]);
@@ -31,4 +43,14 @@ class Login extends Model {
     }
     throw new AppException('Usuário e Senha inválidos');
   }  
+
+  public function checkEmail(){
+    $this->validateEmail();
+    $user = User::getOne(['email' => $this->email]);
+    if($user) {
+      addSuccessMsg('Email enviado com sucesso.');
+    } else {
+      throw new AppException('Usuário não encontrado.');
+    }
+  }
 }
