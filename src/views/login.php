@@ -41,7 +41,6 @@
         </div>
       </div>
       <div class="card-footer">
-        <a href="/recover_password.php" class="btn btn-secondary btn-lg mr-2">Esqueci a senha</a>
         <button class="btn btn-lg btn-primary">Entrar</button>
       </div>
     </div>

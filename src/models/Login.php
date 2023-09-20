@@ -48,7 +48,7 @@ class Login extends Model {
     $this->validateEmail();
     $user = User::getOne(['email' => $this->email]);
     if($user) {
-      addSuccessMsg('Email enviado com sucesso.');
+      return $user;
     } else {
       throw new AppException('Usuário não encontrado.');
     }
