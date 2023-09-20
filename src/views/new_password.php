@@ -23,18 +23,28 @@
       </div>
       <div class="card-body">
         <?php include(TEMPLATE_PATH . '/messages.php') ?>
-        <div class="form-group">
-          <label for="email">E-mail da conta</label>
-          <input type="email" id="email" name="email" class="form-control <?= $errors['email'] ? 'is-invalid' : '' ?>"
-            value="<?= $email ?>" placeholder="Informe o e-mail" autofocus>
-          <div class="invalid-feedback">
-            <?= $errors['email'] ?>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" placeholder="Informe a senha"
+              class="form-control <?= $errors['password'] ? 'is-invalid' : '' ?>">
+            <div class="invalid-feedback">
+              <?= $errors['password'] ?>
+            </div>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="confirm_password">Confirmação de Senha</label>
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirme a senha"
+              class="form-control <?= $errors['confirm_password'] ? 'is-invalid' : '' ?>">
+            <div class="invalid-feedback">
+              <?= $errors['confirm_password'] ?>
+            </div>
           </div>
         </div>
       </div>
       <div class="card-footer">
-        <a href="/login.php" class="btn btn-secondary btn-lg mr-2">voltar</a>
-        <button class="btn btn-lg btn-primary">Enviar</button>
+        <a href="/login.php" class="btn btn-secondary btn-lg mr-2">Cancela</a>
+        <button class="btn btn-lg btn-primary">Salvar</button>
       </div>
     </div>
   </form>
