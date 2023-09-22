@@ -15,6 +15,7 @@
 - Sistema operacional: Windows 10.
 - Banco de dados relacional: MySQL.
 - Servidor: Apache(no meu caso utilizei o MAMP).
+- Editor: Visual Studio Code.
 
 # <h1 align="center">👨‍💻 Autor</h1>
 
