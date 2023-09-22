@@ -11,7 +11,7 @@
 
 
 # <h1 align="center">🛰️ Tecnologias utilizadas</h1>
-- Linguagem: Php 8.1.21.
+- Linguagem: PHP 8.1.21.
 - Sistema operacional: Windows 10.
 - Banco de dados relacional: MySQL.
 - Servidor: Apache(no meu caso utilizei o MAMP).
