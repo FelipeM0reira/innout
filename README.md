@@ -8,7 +8,11 @@
    
 # <h1 align="center">🔨 Funcionalidades do projeto</h1>
 
+- `Funcionalidade 1`:
 
+
+
+- `Funcionalidade 2`:
 
 # <h1 align="center">🛰️ Tecnologias utilizadas</h1>
 - Linguagem: PHP 8.1.21.
