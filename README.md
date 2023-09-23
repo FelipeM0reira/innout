@@ -16,7 +16,7 @@
   
 ![home](https://github.com/FelipeM0reira/innout/assets/104744113/586ae7b0-152f-441d-96a2-8e5a387855bf)
 
-- `Funcionalidade`: Relatóio Mensal (Logado como administrador).
+- `Funcionalidade`: Relatóio Mensal (Logado como administrador) com filtro de usuários e por data(mês/ano).
   
 ![relatorioMensal](https://github.com/FelipeM0reira/innout/assets/104744113/5bd44f92-3204-4acc-9056-8a36a47ff5de)
 
