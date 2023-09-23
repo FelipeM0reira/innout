@@ -16,9 +16,21 @@
   
 ![home](https://github.com/FelipeM0reira/innout/assets/104744113/586ae7b0-152f-441d-96a2-8e5a387855bf)
 
-- `Funcionalidade`: Relatóio Mensal (Logado como administrador) com filtro de usuários e por data(mês/ano).
+- `Funcionalidade`: Relatório Mensal (Logado como administrador) com filtro de usuários e por data(mês/ano).
   
 ![relatorioMensal](https://github.com/FelipeM0reira/innout/assets/104744113/5bd44f92-3204-4acc-9056-8a36a47ff5de)
+
+- `Funcionalidade`: Relatório Gerencial.
+  
+![relatorioGerencial](https://github.com/FelipeM0reira/innout/assets/104744113/0de6a530-69b9-419a-bbe7-b3c9817ad8ad)
+
+- `Funcionalidade`: Gerenciamento de usuários (CRUD de usuários, apenas para Administrador).
+
+![usuarios](https://github.com/FelipeM0reira/innout/assets/104744113/fa1a83ea-9f4b-4e10-96bd-e65b4a987934)
+
+  
+![cadastroUsuario](https://github.com/FelipeM0reira/innout/assets/104744113/a2de22ea-00b3-4ab5-bab3-fef7a6bdb989)
+
 
 # <h1 align="center">🛰️ Tecnologias utilizadas</h1>
 - Linguagem: PHP 8.1.21.
