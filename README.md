@@ -12,12 +12,12 @@
 
 ![login](https://github.com/FelipeM0reira/innout/assets/104744113/6e5382a1-384b-4564-b98a-96f1d83843ad)
 
-- `Funcionalidade`: Home.
+- `Funcionalidade`: Home (Logado como administrador).
   
 ![home](https://github.com/FelipeM0reira/innout/assets/104744113/586ae7b0-152f-441d-96a2-8e5a387855bf)
 
-- `Funcionalidade`: Relatóio Mensal (Visão do administrador).
-- 
+- `Funcionalidade`: Relatóio Mensal (Logado como administrador).
+  
 ![relatorioMensal](https://github.com/FelipeM0reira/innout/assets/104744113/5bd44f92-3204-4acc-9056-8a36a47ff5de)
 
 # <h1 align="center">🛰️ Tecnologias utilizadas</h1>
