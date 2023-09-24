@@ -4,7 +4,7 @@
 
 # <h1 align="center">🧾 Descrição do projeto</h1>
 
- - Projeto de ponto eletrônico, desenvolvido utilizando como linguagem o PHP, com várias funcionalidades, incluindo, login, CRUD, além da contabilidade de horas trabalhadas e faltantes.
+ - Projeto de ponto eletrônico, desenvolvido utilizando como linguagem o PHP, com várias funcionalidades, incluindo, login, CRUD de funcionários, além da contabilidade de horas trabalhadas, funcionários presentes e faltantes.
    
 # <h1 align="center">🔨 Funcionalidades do projeto</h1>
 
