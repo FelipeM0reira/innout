@@ -41,4 +41,4 @@
 
 # <h1 align="center">👨‍💻 Autor</h1>
 
- [<img src="https://avatars.githubusercontent.com/u/104744113?v=4" width=115><br><sub>Felipe Moreira</sub>](https://github.com/FelipeM0reira) 
+ [<img src="https://avatars.githubusercontent.com/u/104744113?v=4" width=115><br><sub>Felipe Moreira ;)</sub>](https://github.com/FelipeM0reira) 
