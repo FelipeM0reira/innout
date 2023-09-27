@@ -28,6 +28,8 @@
 
 ![usuarios](https://github.com/FelipeM0reira/innout/assets/104744113/6dda0c59-f2ba-4ad0-9e9d-53ea2369386c)
 
+- `Funcionalidade`: Ralatório de cadastro de novo usuário e de edição(update). 
+
 ![cadastroUsuario](https://github.com/FelipeM0reira/innout/assets/104744113/5ae7e57a-6ded-40d4-ab36-f46ad0ca10b2)
 
 # <h1 align="center">🛰️ Tecnologias utilizadas</h1>
